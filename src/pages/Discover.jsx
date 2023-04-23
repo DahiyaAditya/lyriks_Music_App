@@ -12,7 +12,7 @@ const Discover = () => {
     const genereTitle = "Pop";
     if(isFetching) return <Loader title="Loding songs..."></Loader>;
     if(error) return <Error></Error>
-    console.log(data);
+    
   return (
     <>
     <div className='flex flex-col'>
