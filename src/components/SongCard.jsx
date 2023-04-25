@@ -29,7 +29,7 @@ const SongCard = ({song , i, isPlaying , activeSong, data}) => {
 
              </PlayPause>
         </div>
-        <img src={song.images?.coverart} alt="....SONG NOT AVAILABLE"  />
+        <img src={song.images?.background} alt="....SONG NOT AVAILABLE"  />
       </div>
       {/* this is for title and subtitle */}
       <div className='mt-4 flex flex-col'>
