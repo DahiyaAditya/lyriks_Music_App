@@ -24,10 +24,11 @@ import {createApi , fetchBaseQuery} from '@reduxjs/toolkit/query/react'
         }),
         endpoints:(builder)=>({
             getTopCharts: builder.query({query:()=>''}),  //here if we have extra end point to add we add it here ' ' Ex: tracks/delhi
-        })
+            getSongDetails: builder.query({ query: ({ songid }) => `v1/tracks/details?track_id=${songid}` }),        })
     });
     export const{
         useGetTopChartsQuery,
+        useGetSongDetailsQuery,
     }= shazamCoreApi;
 
 
